@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .item{
+            font-size: 40px;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media (max-width:250px){
+            #item-1{
+                display: block;
+            }
+        }
+        @media (min-width:251px) and (max-width:500px){
+            #item-2{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media (min-width:501px) and (max-width:900px){
+            #item-3{
+                display: block;
+                background-color: black;
+            }
+        }
+        @media (min-width:901px){
+            #item-4{
+                display: block;
+                background-color: rgb(89, 165, 42);
+            }
+        }
+    </style>
+    <div class="item" id="item-1">1 this is a screen of device small mobile</div>
+    <div class="item" id="item-2">2 this is a screen of device -tab</div>
+    <div class="item" id="item-3">3 this is a screen of device -desk top</div>
+    <div class="item" id="item-4">4 this is a screen of device -large tv</div>
+
+</body>
+</html>
